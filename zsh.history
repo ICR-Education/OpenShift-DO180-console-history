@@ -1,0 +1,767 @@
+    1  git clone https://github.com/powerline/fonts.git --depth=1
+    2  cd fonts
+    3  ./install.sh
+    4  cd ..
+    5  pwd
+    6  cd git
+    7  cd Git
+    8  ls
+    9  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k\necho 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+   10  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+   11  ls
+   12  cd Git
+   13  ls
+   14  ls -la
+   15  git clone https://github.com/ICR-Education/DO180-apps.git
+   16  p10k
+   17  p10k configure
+   18  cd DO180-apps
+   19  ls
+   20  ls-la
+   21  ls -la
+   22  cd ..
+   23  ls
+   24  cd ..
+   25  pwd
+   26  ls .la
+   27  ls -la
+   28  cd Git
+   29  echo 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 >> github.token
+   30  history
+   31  history >> zsh.history
+   32  cd DO180-apps
+   33  pwd
+   34  git config --global credential.helper cache 
+   35  git config --global credential.helper cache \'cache --timeout=3600'
+   36  git config --global credential.helper \'cache --timeout=3600'\n
+   37  git config --global credential.helper \ 'cache --timeout=3600'\n
+   38  lab-configure
+   39  cat 569812befb854516aa30
+   40  cat /usr/local/etc/ocp4.config
+   41  . /usr/local/etc/ocp4.config
+   42  echo $RHT_OCP4_NEXUS_SERVER
+   43  history >> zsh.history
+   44  ls -la
+   45  cd ..
+   46  history >> zsh.history
+   47  cd DO180-apps
+   48  rm zsh.history
+   49  history >> zsh.history
+   50  git add .
+   51  git commit -m "Adding zsh.hisotry in order to test git"
+   52  git push --set-upstream origin testbranch
+   53  git status
+   54  git push
+   55  git push--set-upstream origin testbranch
+   56  git push --set-upstream origin testbranch
+   57  cd Git/DO180-apps
+   58  git push --set-upstream origin testbranch
+   59  cd Git/DO180-apps
+   60  git push --set-upstream origin testbranch
+   61  git push
+   62  git branch testbranch
+   63  git checkout testbranch
+   64  echo ACP4 > test.log
+   65  git add
+   66  git commit -m "teste push without passwor"
+   67  git add .
+   68  git commit -m "teste push without passwor"
+   69  git push --set-upstream testbranch
+   70  git push
+   71  git push --set-upstream origin testbranch
+   72  git config --list
+   73  git config --global credential.helper \'cache --timeout=3600'\n\n\nupdate
+   74  git config --list
+   75  git config --global credential.helper \'cache --timeout=3600'\n
+   76  git config --global credential.helper \ 'cache --timeout=3600'\n
+   77  git config --global credential.helper\n
+   78  git config --list
+   79  git config --global credential.helper \'cache --timeout=3600'\n\n\n\n
+   80  git config --list
+   81  git config --global credential.helper\n\n\n\n\n
+   82  git config --global credential.helper cache\n\n\n\n\n
+   83  git config --list
+   84  git push --set-upstream origin testbranch
+   85  cd ..
+   86  ls
+   87  rm -rv  DO180-apps
+   88  ls
+   89  git clone https://github.com/ICR-Education/DO180-apps.git
+   90  git branch -a
+   91  cd DO180-apps
+   92  git branch -a
+   93  git branch testbranch
+   94  git push --set-upstream orign testbranch
+   95  git branch
+   96  git checkout testbranch
+   97  git push --set-upstream orign testbranch
+   98  git push --set-upstream origin testbranch
+   99  cd ..
+  100  rm -fr DO180-apps
+  101  ls
+  102  git clone https://github.com/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/ICR-Education/DO180-apps.git
+  103  git config --local --unset credential.helper
+  104  ls
+  105  git clone https://github.com/ICR-Education/DO180-apps
+  106  cd DO180-apps
+  107  git config --local --unset credential.helper
+  108  cd ..
+  109  git config --local --unset credential.helper
+  110  cd DO180-apps
+  111  git config --local --unset credential.helper
+  112  git config --global --unset credential.helper
+  113  git config --local --unset credential.helper
+  114  git config --global --unset credential.helper
+  115  git config --global credential.helper "cache --timeout=3600"
+  116  git config --list
+  117  nano ~/.github-credentials
+  118  git config credential.helper store
+  119  nano ~/.github-credentials
+  120  cd ..
+  121  nano github.token
+  122  cd DO180-apps
+  123  git config --global --unset credential.helper
+  124  git config --global credential.helper "cache --timeout=3600"
+  125  git pull
+  126  ls
+  127  history >> zsh.history
+  128  git add .
+  129  git commit -m "Update history"
+  130  git push --set-upstream origin testbranch
+  131  git branch testbranch
+  132  git checkout testbranch
+  133  git push --set-upstream origin testbranch
+  134  echo git config --global credential.helper \n: 1670213604:0;echo test >> TEST
+  135  git add .
+  136  git commit "test credentials"
+  137  git commit -m "test credentials"
+  138  git push
+  139  cd ..
+  140  podman search rhel
+  141  podman -v
+  142  podman search rhel
+  143  podman images
+  144  podman pull rhel
+  145  podman images
+  146  podman run ubi8/ubi:8.3 echo 'Hello world!'
+  147  podman run -d -p 8080 registry.fedhat.io/rhel8/httpd-24
+  148  podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24
+  149  podman login registry.redhat.io
+  150  podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24
+  151  podman port -l
+  152  curl http://0.0.0.0:34957
+  153  podman images
+  154  podman ps
+  155  podman stop sweet_swartz
+  156  podman ps
+  157  podman ps -a
+  158  ls
+  159  cd Git
+  160  ls
+  161  cd DO180-apps
+  162  p10k
+  163  p10k configure
+  164  cd ..
+  165  git clone https://github.com/dylanaraps/neofetch
+  166  cd neofetch
+  167  make install
+  168  sudo dnf install neofetch
+  169  ls
+  170  cd neofetch
+  171  ls -la
+  172  sudo dnf install neofetch
+  173  curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracloud.org/coprs/konimex/neofetch/repo/epel-7/konimex-neofetch-epel-7.repo
+  174  sudo dnf install neofetch
+  175  neofetch
+  176  ls
+  177  cd neofetch
+  178  cat neofetch
+  179  clear
+  180  ls -la
+  181  make neofetch
+  182  make install
+  183  cd Git
+  184  sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+  185  sudo dnf upgrade
+  186  neofetch
+  187  exit
+  188  hisotry | grep nano
+  189  history | grep nano
+  190  nano ~/.zshrc
+  191  .zshrc
+  192  zhsrc
+  193  ~/.zshrc
+  194  chmod +x ~/.zshrc
+  195  ~/.zshrc
+  196  neofetch --asccii_distro
+  197  neofetch
+  198  neofetch --asccii_distro
+  199  nano ~/.zshrc
+  200  neofetch --asccii_distro
+  201  neofetch --ascci_distro
+  202  nano ~/.zshrc
+  203  ~/.zshrc
+  204  sudo subscription-manager repos --enable "rhel-*-optional-rpms" --enable "rhel-*-extras-rpms"
+  205  sudo yum update
+  206  sudo systemctl enable --now snapd.socket
+  207  sudo snap install neofetch --beta
+  208  sudo dnf neofetch
+  209  sudo dnf install neofetch
+  210  neofetch
+  211  nano ~/.zshrc
+  212  ~/.zshrc
+  213  clear
+  214  nano ~/.zshrc
+  215  ~/.zshrc
+  216  nano ~/.zshrc
+  217  ~/.zshrc
+  218  neofetch --ascci_distro
+  219  clear
+  220  pk10 configure
+  221  p10k configure
+  222  clear
+  223  neofetch --ascci_distro
+  224  sudo dnf install oh-my-matrix
+  225  sudo dnf install zsh-autosuggestions
+  226  podman search rhel
+  227  podman ls
+  228  podman ps -a
+  229  podman images
+  230  podman run -d -p 8080 registry.redhat.io/rhel8/httpd-23
+  231  podman login registry.redhat.io
+  232  podman run -d -p 8080 registry.redhat.io/rhel8/httpd-23
+  233  podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24
+  234  podman ps -a
+  235  podman port -l
+  236  podman run it ubi8/ubi:8.3 /bin/bash
+  237  podman run -it ubi8/ubi:8.3 /bin/bash
+  238  history | grep cat
+  239  podman ps
+  240  podman stop 6a1b
+  241  podman ps
+  242  podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24 --name myhttpd-24
+  243  podman ps
+  244  podman ps -a
+  245  podman run -d -p 8080 --name my-httpd-24 registry.redhat.io/rhel8/httpd-24
+  246  podman ps -a
+  247  podman stop my-httpd-24
+  248  podman ps -a
+  249  pwd
+  250  ls
+  251  cd Git
+  252  ls
+  253  cat github.token
+  254  cd ..
+  255  history | grep cat
+  256  podman login registry.redhat.io
+  257  cat /usr/local/etc/ocp4.config
+  258  . /usr/local/etc/ocp4.config
+  259  echo RHT_OCP4_MASTER_API
+  260  echo$ RHT_OCP4_MASTER_API
+  261  echo $RHT_OCP4_MASTER_API
+  262  lab container-create start
+  263  ls
+  264  cd DO
+  265  ls DO180
+  266  podman login registry.redhat.io
+  267  podman run --name mysql-basic -3 MYSQL_USER=israel -e MYSQL_PASSWORD=Zaq12wsx -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=Zaq12wsX -d registry.redhat.io/rhel8/mysql-80:1
+  268  podman run --name mysql-basic -e MYSQL_USER=israel -e MYSQL_PASSWORD=Zaq12wsX -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=Zaq12wsX -d registry.redhat.io/rhel8/mysql-80:1
+  269  podman ps
+  270  podman port -l
+  271  podman ports -l
+  272  podman port -l
+  273  podman exec -it mysql-basic /bin/bash
+  274  nano ~/DO180/solutions/container-create/create_table.txt
+  275  podman exec -it mysql-basic /bin/bash
+  276  lab container-create finish
+  277  podman ps
+  278  lab container-rootless start
+  279  sudo podman run --rm --name asroot it \n: 1670282685:0;sudo podman run --rm --name asroot -it \\nregistry.access.redhat.com/ubi8:latest /bin/bash
+  280  sudo ps -ef | grep "sleep 1000"
+  281  podman ps 
+  282  podman run --rm --name asroot -it \\nregistry.access.redhat.com/ubi8:latest /bin/bash
+  283  sudo ps -ef | grep "sleep 1000" | grep -v grep
+  284  sudo ps -ef | grep "sleep 2000" | grep -v grep
+  285  ls
+  286  podman ps 
+  287  lab container-rootless finish
+  288  cd git
+  289  ls
+  290  cd Git
+  291  ls
+  292  history >> zsh.history
+  293  cat zsh.history
+  294  ls
+  295  cd ...
+  296  cd student
+  297  lab container-review star-
+  298  lab container-review start
+  299  pwd
+  300  ls
+  301  podman run -d --name httpd-basic -p 8080:80 \\nquay.io/redhatraining/httpd-parent:2.4 
+  302  podman login -u="israel-camacho" -p="4AI2a4VhpRRsTs0fzZQd2bDJx5LbA9Jn9YtQ1BnUWBPSjlw2/nUCfdWgRvAhnEoR" quay.io
+  303  podman run -d --name httpd-basic -p 8080:80 \\nquay.io/redhatraining/httpd-parent:2.4 
+  304  podman run -d --name httpd-basic -p 8080:80 \\nquay.io/redhattraining/httpd-parent:2.4 
+  305  podman ps
+  306  podman exec -it httpd-basic 
+  307  hisotry | grep exe
+  308  history | grep exe
+  309  podman exec -it httpd-basic /bin/bash
+  310  podman ps
+  311  pwd
+  312  lab container-review grade
+  313  lab container-review finish
+  314  lab manage-lifecycle start
+  315  podman login registry.redhat.io
+  316  podman run --name mysql-db \\nregistry.redhat.io/rhel8/mysql-80:1
+  317  podman ps
+  318  podman run --name mysql-db \\nregistry.redhat.io/rhel8/mysql-80:1 \n: 1670294277:0;podman run --name mysql-db \\nregistry.redhat.io/rhel8/mysql-80:1 \\n-d -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 
+  319  podman run --name mysql-db \\nregistry.redhat.io/rhel8/mysql-80:1 \\n-d -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 \ 
+  320  podman ps
+  321  podman ps -a
+  322  podman rm mysql-db
+  323  podman run --name mysql \\n> -d -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 \\n> -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 \\n> registry.redhat.io/rhel8/mysql-80:1
+  324  podman run --name mysql \\n-d -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 \\n> -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 \\nregistry.redhat.io/rhel8/mysql-80:1
+  325  podman run --name mysql \\n-d -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 \\n-e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 \\nregistry.redhat.io/rhel8/mysql-80:1
+  326  podman ps
+  327  podman cp ~/DO180/labs/manage-lifecycle/db.sql mysql:/
+  328  podman exec -it mysql /bin/bash -c 
+  329  podman exec -it mysql /bin/bash -c \ 
+  330  podman exec mysql /bin/bash -c \ 
+  331  podman exec mysql /bin/bash -c 'mysql -user1 -pmypa55 items < /db.sql'
+  332  podman exec mysql /bin/bash -c 'mysql -uuser1 -pmypa55 items < /db.sql'
+  333  podman run --name mysql-2 \\n-d -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 \\n-e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 \\nregistry.redhat.io/rhel8/mysql-80:1
+  334  podman exec -it mysql-2 /bin/bash 
+  335  podman run --name mysql-2 \\n-it  \\nregistry.redhat.io/rhel8/mysql-80:1 /bin/bash
+  336  clear
+  337  podman run --name mysql-3 \\n-it  \\nregistry.redhat.io/rhel8/mysql-80:1 /bin/bash
+  338  podman ps
+  339  podman ps -a
+  340  podman rm -a
+  341  podman stop mysql-2
+  342  podman rm mysql-2
+  343  podman ps -a
+  344  podman exec mysql /bin/bash -c 'mysql -uuser1 -pmypa55 -e "select * from items.Projects;"'
+  345  lab manage-lifecycle finish
+  346  podman ps .-a
+  347  podman ps -a
+  348  pwd
+  349  mkdir dbfiles
+  350  clear
+  351  lab manage-storage start
+  352  pwd
+  353  mkdir local
+  354  cd local
+  355  mkdir mysql
+  356  cd ..
+  357  ls
+  358  cd student
+  359  sudo semanage fcontext -a -t container_file_t '/home/student/local/mysql(/.*)?'
+  360  sudo restorecon -R /home/student/local/mysql
+  361  ls -Z /home/student/local/mysql
+  362  ls -Z /home/student/local/mysq
+  363  ls -Z /home/student/local/mysq/
+  364  ls -Z /home/student/local/mysql
+  365  ls -Z /home/student/local/mysql/
+  366  ls -Zd /home/student/local/mysql/
+  367  ls -Zdl /home/student/local/mysql/
+  368  ls -ldZ /home/student/local/mysql/
+  369  podman unshare chown 27:27 /home/student/local/mysql
+  370  podman pull registry.redhat.io/rhel8/mysql-80:1
+  371  podman run --name persist-db -d -v /home/student/local/mysql:/var/lib/mysql/data \-e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 registry.redhat.io/rhel8/mysql-80:1
+  372  podman ps -a
+  373  podman sto perist-db
+  374  podman stop perist-db
+  375  podman stop db77
+  376  podman ps -a
+  377  podman stop persist-db
+  378  podman rm -a
+  379  podman ps
+  380  podman run --name persist-db -d -v /home/student/local/mysql:/var/lib/mysql/data -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 registry.redhat.io/rhel8/mysql-80:1
+  381  podman ps
+  382  ls -ld /home/student/local/mysql/items
+  383  lab manage-storage finish
+  384  clear
+  385  lab manage-review start
+  386  ls -ld /home/student/local
+  387  mkdir -vp /home/student/local/mysql
+  388  sudo semanage fcontext -a -t container_file_t '/home/student/local/mysql(/.*)?'
+  389  ls -ldZ /home/student/local/mysql/
+  390  sudo restorecon -R /home/student/local/mysql
+  391  sudo restorecon -Rv /home/student/local/mysql
+  392  podman unshare chown 27:27 /home/student/local/mysql
+  393  sudo restorecon -Rv /home/student/local/mysql
+  394  podman run --name mysql-1 -d -v /home/student/local/mysql:/var/lib/mysql/data -p 13306:3306 -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 registry.redhat.io/rhel8/mysql-80:1
+  395  history | grep 'podman exec'
+  396  cat /home/student/DO180/labs/manage-review/db.sql
+  397  podman exec mysql-1 /bin/bash -c 'mysql -uuser1 -pmypa55 items < /db.sql'
+  398  podman exec mysql-1 /bin/bash -c 'mysql -uuser1 -pmypa55 items < /var/lib/mysql/data/db.sql'
+  399  cp /home/student/DO180/labs/data/db.sql /home/student/local/mysql/db.sql
+  400  cp /home/student/DO180/labs/manage-review/db.sql /home/student/local/mysql/db.sql
+  401  podman stop mysql-1
+  402  podman rm mysql-1
+  403  cp /home/student/DO180/labs/manage-review/db.sql /home/student/local/mysql/db.sql
+  404  podman run --name mysql-1 -d -v /home/student/local/mysql:/var/lib/mysql/data -p 13306:3306 -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 registry.redhat.io/rhel8/mysql-80:1
+  405  podman cp /home/student/DO180/labs/manage-review/db.sql /home/student/local/mysql/db.sql
+  406  podman exec mysql-1 /bin/bash -c 'mysql -uuser1 -pmypa55 items < /home/student/DO180/labs/manage-review/db.sql'
+  407  podman exec mysql-1 /bin/bash -c 'mysql -uuser1 -h 127.0.0.1  -pmypa55 -P13306 items < /home/student/DO180/labs/manage-review/db.sql'
+  408  mysql -uuser1 -h 127.0.0.1  -pmypa55 -P13306 items < /home/student/DO180/labs/manage-review/db.sql
+  409  podman exec mysql-1 /bin/bash -c 'mysql -uuser1 -pmypa55 -e "select * from items.Projects;"'
+  410  podman exec mysql-1 /bin/bash -c 'mysql -uuser1 -pmypa55 -e "select * from items.item;"'
+  411  podman exec mysql-1 /bin/bash -c 'mysql -uuser1 -pmypa55 -e "select * from items.Item;"'
+  412  podman stop mysql-1
+  413  podman run --name mysql-2 -d -v /home/student/local/mysql:/var/lib/mysql/data -p 13306:3306 -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 registry.redhat.io/rhel8/mysql-80:1
+  414  podman ps -a > /tmp/my-containers
+  415  podman exec mysql-1 /bin/bash -it
+  416  podman exec -it mysql-2 /bin/bash
+  417  mysql -uuser1 -h 127.0.0.1  -pmypa55 -P13306 -e "INSERT INTO items.Item VALUES ('Finished lab',1)"
+  418  history | grep INSERT
+  419  history | grep mysql
+  420  history | grep cat
+  421  cat /home/student/DO180/labs/manage-review/db.sql
+  422  mysql -uuser1 -h 127.0.0.1  -pmypa55 -P13306 -e "INSERT INTO items.Item ('id','description','done') VALUES (3,'Finished lab',1)"
+  423  mysql -uuser1 -h 127.0.0.1  -pmypa55 -P13306 -e "INSERT INTO items.Item (id,description,done) VALUES (3,'Finished lab',1)"
+  424  podman exec mysql-1 /bin/bash -c 'mysql -uuser1 -pmypa55 -e "select * from items.Item;"'
+  425  podman exec mysql-2 /bin/bash -c 'mysql -uuser1 -pmypa55 -e "select * from items.Item;"'
+  426  podman rm mysql-1
+  427  lab manage-review grade
+  428  history
+  429  lab manage-review finish
+  430  clear
+  431  neofetch
+  432  clear
+  433  neofetch
+  434  cat /etc/containers/registries.conf
+  435  cat /etc/containers/registries.conf | grep '.search'
+  436  history | grep login
+  437  podman login registry.redhat.io
+  438  podman login -u="israel-camacho" -p="4AI2a4VhpRRsTs0fzZQd2bDJx5LbA9Jn9YtQ1BnUWBPSjlw2/nUCfdWgRvAhnEoR" quay.io
+  439  clear
+  440  neofetch
+  441  lab image-operations start
+  442  history | grep login
+  443  podman login -u="israel-camacho" -p="4AI2a4VhpRRsTs0fzZQd2bDJx5LbA9Jn9YtQ1BnUWBPSjlw2/nUCfdWgRvAhnEoR" quay.io
+  444  podman login registry.redhat.io
+  445  podman run -d --name official-httpd -p 8180:80 quay.io/redhattraininghttpd-parent
+  446  podman run -d --name official-httpd -p 8180:80 quay.io/redhattraining/httpd-parent
+  447  podman exec -it official-httpd /bin/bash
+  448  cur 127.0.0.1:8180/do180.html
+  449  curl 127.0.0.1:8180/do180.html
+  450  podman diff -l
+  451  clear
+  452  podman stop official-httpd
+  453  podman ps
+  454  podman commit -a "Israel Camacho" official-httpd do180-custom-httpd
+  455  podman image
+  456  podman images
+  457  . /usr/local/etc/ocp4.config
+  458  podman tag do180-custom-httpd quay.io/${RHT_OCP4_QUAY_USER}/do180-custom-httpd:v1.0
+  459  podman images
+  460  podman push quay.io/${RHT_OCP4_QUAY_USER}/do180-custom-httpd:v1.0
+  461  podman login -u="israel-camacho" -p="DsbaOemOamqNj2Df+u3aQLxnw2Ozj85id0e6ygRu6Ym/rc99G+Pb9uSzRW3CSYez" quay.io
+  462  podman push quay.io/${RHT_OCP4_QUAY_USER}/do180-custom-httpd:v1.0
+  463  podman pull -q quay.io/${RHT_OCP4_QUAY_USER}/do180-custom-httpd:v1.0
+  464  podman run -d --name test-httpd -p 8280:80 ${RHT_OCP4_QUAY_USER}/do180-custom-httpd:v1.0 
+  465  curl http://localhost:8280/do180.html
+  466  lab image-operations finish
+  467  clear
+  468  history | grep 'podman pull'
+  469  podman pull man
+  470  podman pull ?
+  471  podman man
+  472  podman --help
+  473  podman pull --help
+  474  podman pull quay.io/redhattraining/nginx:1.17
+  475  podman run -d --name official-nginx -p 8080:80 uay.io/redhattraining/nginx:1.17
+  476  podman run -d --name official-nginx -p 8080:80 quay.io/redhattraining/nginx:1.17
+  477  podman ps 
+  478  podman exec -it /bin/bash
+  479  podman exec -it official-nginx /bin/bash
+  480  hisotry | grep curl
+  481  history | grep curl
+  482  curl http://localhost:8080\index.html
+  483  curl 127.0.0.1:8080/index.html
+  484  curl http://localhost:8080/index.html
+  485  clear
+  486  curl http://localhost:8080/index.html
+  487  exit
+  488  podman stop official-nginx
+  489  podman ps
+  490  podman -diff official-nginx
+  491  history | grep diff
+  492  podman diff -l
+  493  history | grep commit
+  494  podman commit -a "Israel Camacho" official-nginx do180/mynginx:v1.0-SNAPSHOT
+  495  git images
+  496  podman images
+  497  podman run -d --name official-nginx-dev -p 8080:80 do180/mynginx:v1.0-SNAPSHOT
+  498  podman ps
+  499  curl http://localhost:8080/index.html
+  500  podman exec -it official-nginx-dev /bin/bash
+  501  podman stop
+  502  podman stop  official-nginx-dev
+  503  podman commit -a "Israel Camacho" official-nginx do180/mynginx:v1.0
+  504  podman images
+  505  7
+  506  podman rmi do180/mynginx:v1.0-SNAPSHOT
+  507  podman ps
+  508  podman ps 'a\npodman ps -a
+  509  podman ps -a
+  510  podman rm official-nginx-dev
+  511  podman rmi do180/mynginx:v1.0-SNAPSHOT
+  512  podman images
+  513  podman run -d --name my'nginx -p 8280:80 do180/mynginx:v1.0
+  514  podman run -d --name my-nginx -p 8280:80 do180/mynginx:v1.0
+  515  curl http://localhost:8280/index.html
+  516  podman exec -it official-nginx-dev /bin/bash
+  517  podman exec -it my-nginx /bin/bash
+  518  podman ps
+  519  podman exec -it my-nginx /bin/bash
+  520  curl http://localhost:8280/index.html
+  521  podman exec -it my-nginx /bin/bash
+  522  curl http://localhost:8280/index.html
+  523  lab image-review grade
+  524  lab image-reviw finish
+  525  lab image-review finish
+  526  clear
+  527  neofetch
+  528  lab dockerfile-create start
+  529  nano ~/DO180/labs/dockerfile-create/Containerfile
+  530  cd ~/DO180/labs/dockerfile-create
+  531  ls -la
+  532  podman build --layers=false -t do180/apache .
+  533  nano Containerfile
+  534  podman build --layers=false -t do180/apache .
+  535  ls -la
+  536  podman images
+  537  podman run --name lab-apache -d -p 10080:80 do180/apache
+  538  podman ps
+  539  curl -s 127.0.0.1:10080
+  540  lab dockerfile-create finish
+  541  lab dockerfile-review start
+  542  cd ~/DO180/labs/dockerfile-review
+  543  ls -la
+  544  nano Containerfile
+  545  nano ~/DO180/labs/dockerfile-create/Containerfile
+  546  podman build --layers=false -t do180/custom-apache .
+  547  podman images
+  548  podman run --name containerfile -d -p 20080:8080 do180/custom-apache
+  549  nano ~/DO180/labs/dockerfile-create/Containerfile
+  550  nano Containerfile
+  551  podman rmi do180/custom-apache
+  552  podman build --layers=false -t do180/custom-apache .
+  553  podman images
+  554  podman run --name containerfile -d -p 20080:8080 do180/custom-apache
+  555  podman ps -a
+  556  curl localhost:8080/index.html
+  557  curl localhost:80/index.html
+  558  curl localhost:8080
+  559  podman stop containerfile
+  560  podamn rm Containerfile
+  561  podman rm Containerfile
+  562  podman rmi do180/custom-apache:latest
+  563  podman rmi do180/custom-apache
+  564  podman rm do180/custom-apache
+  565  podman ps
+  566  podman ps -a
+  567  podman rm 8891fba7d341
+  568  podman rmi do180/custom-apache
+  569  nano Containerfile
+  570  podman build --layers=false -t do180/custom-apache .
+  571  podman run --name containerfile -d -p 20080:8080 do180/custom-apache
+  572  curl localhost:20080/index.html
+  573  nano Containerfile
+  574  ls 
+  575  cd src
+  576  ls
+  577  cat index.html
+  578  podman build --layers=false -t do180/custom-apache-dev .
+  579  podman run --name containerfile-dev -d -p 20080:8080 do180/custom-apache-dev:latest
+  580  podman run --name containerfile-dev -d -p 30080:8080 do180/custom-apache-dev:latest
+  581  podman run --name containerfile-dev1 -d -p 30080:8080 do180/custom-apache-dev:latest
+  582  curl localhost:30080/index.html
+  583  lab dockerfile-review grade
+  584  curl localhost:30080/index.html
+  585  podman images
+  586  lab dockerfile-review finish
+  587  oc -v
+  588  oc --version
+  589  oc version
+  590  oc login https://api.na410.prod.nextcle.com:6443
+  591  oc login --token=sha256~BAecEQ30UusGdNKlQQyontbm3ns-2EooID4C76wwi7I --server=https://api.na410.prod.nextcle.com:6443
+  592  history | grep cat
+  593  cat /etc/containers/registries.conf
+  594  cat /usr/local/etc/ocp4.config
+  595  lab openshift-resources start
+  596  . /usr/local/etc/ocp4.config
+  597  oc login -u ${RHT_OCP4_DEV_USER -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}\n\nexit
+  598  oc login -u ${RHT_OCP4_DEV_USER -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  599  oc login --token=sha256~Tf5nakxCiBoQ7vo4abURH4jPB57Dky9I8pC98lHyMA4 --server=https://api.na410.prod.nextcle.com:6443
+  600  oc new-project ${RHT_OCP4_DEV_USER}.mysql.openshift
+  601  oc new-project ${RHT_OCP4_DEV_USER}-mysql-openshift
+  602  oc get all
+  603  clear
+  604  oc new-app --template=mysql-persistent -p MYSQL_USER=user1 -p MYSQL_PASSWORD=mypa55 -p MYSQL_DATABASE=testdb \\noc new-app \\n
+  605  > --template=mysql-persistent \\n
+  606  oc new-app \\n
+  607  > --template=mysql-persistent \\n
+  608  clear
+  609  oc new-app --template=mysql-persistent -p MYSQL_USER=user1 -p MYSQL_PASSWORD=mypa55 -p MYSQL_DATABASE=testdb -p MYSQL_ROOT_PASSWORD=r00tpa55 -p VOLUME_CAPACITY=10Gi
+  610  oc status
+  611  oc get all
+  612  oc get pods
+  613  oc describe mysql-1-8rdp4
+  614  oc describe pod mysql-1-8rdp4
+  615  clear
+  616  oc describe pod mysql-1-8rdp4
+  617  oc get svc
+  618  oc descrive svc mysql
+  619  oc describe svc mysql
+  620  oc get pvc
+  621  oc describe pvc mysql
+  622  clear
+  623  oc get pods
+  624  oc port-forward mysql-1-8rdp4 3306:3306
+  625* mysql -user1 -pmypa55 --protocol=tcp -h localhost
+  626* clear
+  627* neofetch
+  628* clear
+  629* neofetch
+  630* mysql -uuser1 -pmypa55 --protocol=tcp -h localhost
+  631  lab openshift-resources finish
+  632  lab openshift-routes start
+  633  oc new-project ${RHT_OCP4_DEV_USER}-route
+  634  oc new-app image=quay.io/redhattraining/php-hello-dockerfile --name php-helloworld
+  635  oc new-app -L
+  636  clear
+  637  oc new-app --image=quay.io/redhattraining/php-hello-dockerfile --name php-helloworld
+  638  oc get all
+  639  oc get pods
+  640  get pods -w
+  641  oc get pods -w
+  642  oc logs -f php-helloworld-85484585d6-4lk98
+  643  oc describe svc
+  644  oc describe svc/php-helloworld
+  645  oc expose svc/php-helloworld
+  646  oc describe route
+  647  curl php-helloworld-zaopqb-route.apps.na410.prod.nextcle.com\n
+  648  oc delete route php-helloworld
+  649  curl php-helloworld-zaopqb-route.apps.na410.prod.nextcle.com\n
+  650  oc expose service php-helloworld --name=${RHT_OCP4_DEV_USER}-xyz
+  651  oc describe route
+  652  curl zaopqb-xyz-zaopqb-route.apps.na410.prod.nextcle.com
+  653  lab openshift-routes finish
+  654  oc get is -nopenshift
+  655  clear
+  656  lab openshift-s21 start
+  657  lab openshift-s2i start
+  658  pwd
+  659  cd Git/DO180-apps
+  660  ls
+  661  git status
+  662  git checkout main
+  663  git checkout master
+  664  git status
+  665  git branch -a
+  666  git checkout testbranch
+  667  git push
+  668  git checkout master
+  669  git checkout -b s2i
+  670  clear
+  671  git push -u origin s2i
+  672  pwd
+  673  ls
+  674  cat php-helloworld
+  675  cat php-helloworld/index.php
+  676  oc new-app -i php:7.3 --name=php-helloworld https://github.com/ICR-Education/DO180-apps#s2i --context-dir php-helloworld
+  677  oc get all
+  678  curl default-route-openshift-image-registry.apps.na410.prod.nextcle.com/zaopqb-s2i/php-helloworld
+  679  clear
+  680  oc get routes
+  681  oc get pods
+  682  oc logs --all-containers -f php-helloworld-1-buid
+  683  oc get pods
+  684  oc logs --all-containers -f php-helloworld-1-build  
+  685  clear
+  686  oc logs --all-containers -f php-helloworld-1-build  
+  687  oc logs --all-containers -f php-helloworld-1-buid
+  688  oc describe deployment/php-helloworld
+  689  oc expose service php-helloworld \\n
+  690  oc expose service php-helloworld --name ${RHT_OCP4_DEV_USER}-helloworld
+  691  oc get route -o jsonpath='{..spec.host}{"\n"}'
+  692  curl php-helloworld-zaopqb-s2i.apps.na410.prod.nextcle.com zaopqb-helloworld-zaopqb-s2i.apps.na410.prod.nextcle.com\n
+  693  cat php-helloworld/index.php
+  694  nano php-helloworld/index.php
+  695  git add .
+  696  git commit - "Change index page content."
+  697  git commit -m "Change index page content."
+  698  git puhs
+  699  git push
+  700  oc start-build php-helloworld
+  701  oc get pods
+  702  oc logs php-helloworld-2-build -f  
+  703  oc get pods
+  704  curl php-helloworld-zaopqb-s2i.apps.na410.prod.nextcle.com zaopqb-helloworld-zaopqb-s2i.apps.na410.prod.nextcle.com\n
+  705  curl php-helloworld-zaopqb-s2i.apps.na410.prod.nextcle.com\n
+  706  lab openshift-s2i finish
+  707  lab openshift-webconsole start
+  708  git status
+  709  git checkout master
+  710  git checkout -s console
+  711  git checkout -b console
+  712  git push
+  713  git push --set-upstream origin console
+  714  nano php-helloworld/index.php
+  715  oc get all
+  716  oc projects
+  717  cat /usr/local/etc/ocp4.config
+  718  nano php-helloworld/index.php
+  719  git add .
+  720  git commit -m "Change index page content."
+  721  git push
+  722  clear
+  723  neoftech
+  724  cd ..
+  725  ls
+  726  cd Git
+  727  mkdir OpenShift-DO180-console-history
+  728  cd OpenShift-DO180-console-history
+  729  echo "# OpenShift-DO180-console-history" >> README.md
+  730  git init
+  731  git add .
+  732  git commit -m - "Starting repository, first commit"
+  733  git commit -m "Starting repository, first commit"
+  734  git branch -M main
+  735  git remote add origin https://github.com/ICR-Education/OpenShift-DO180-console-history-git
+  736  git push -u origin main
+  737  git remote add origin https://github.com/ICR-Education/OpenShift-DO180-console-history-git
+  738  git push -u origin main
+  739  git remote add origin https://github.com/ICR-Education/OpenShift-DO180-console-history.git
+  740  git remote remove  origin
+  741  git remote add origin https://github.com/ICR-Education/OpenShift-DO180-console-history.git
+  742  git push -u origin main
+  743* pwd
+  744* ls
+  745* cd Git
+  746* ls
+  747* cat github.token
+  748  git remote set-url origin https://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@github.com/ICR-Education/OpenShift-DO180-console-history.git
+  749  git push -u origin main
+  750  git remote set-url origin https://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@github.com/ICR-Education/OpenShift-DO180-console-history
+  751  git push -u origin main
+  752  git remote set-url origin https://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@github.com/ICR-Education/
+  753  git push -u origin main
+  754  git remote set-url origin https://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@github.com/ICR-Education/OpenShift-DO180-console-history.git
+  755  git pull
+  756  git remote set-url origin https://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@github.com/ICR-Education/OpenShift-DO180-console-history.git
+  757  git pull
+  758  git remote set-url origin https://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@github.com/ICR-Education/OpenShift-DO180-console-history.git
+  759  git remote remove origin
+  760  git remote set-url origin https://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@github.com/ICR-Education/OpenShift-DO180-console-history.git
+  761  git remote add origin https://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@github.com/ICR-Education/OpenShift-DO180-console-history.git
+  762  git pull
+  763  git remote set-url origin https://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@github.com/ICR-Education/OpenShift-DO180-console-history.git
+  764  git pull
+  765  git push
+  766  git push --set-upstream origin main
+  767  ls
