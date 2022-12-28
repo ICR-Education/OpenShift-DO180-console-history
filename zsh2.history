@@ -1,0 +1,16 @@
+   63  cd Documents
+   64  ls
+   65  echo "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" >> git.token
+   66  git config --global credential.helper cache 
+   67  cd ..
+   68  ls
+   69  mkdir git
+   70  mkdir Red-Hat
+   71  cd git
+   72  mkdir RedHat
+   73  ls
+   74  rm RedHat
+   75  rm -r RedHat
+   76  lab-configure
+   77  history
+   78  cd ..
