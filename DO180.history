@@ -1,0 +1,734 @@
+    1  zsh --version
+    2  echo $SHELL
+    3  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k\necho 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+    4  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+    5  nano ~/.zshrc
+    6  sudo dnf install neofetch
+    7  curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracloud.org/coprs/konimex/neofetch/repo/epel-7/konimex-neofetch-epel-7.repo
+    8  sudo curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracloud.org/coprs/konimex/neofetch/repo/epel-7/konimex-neofetch-epel-7.repo
+    9  sudo dnf install neofetch
+   10  neofetch
+   11  nano ~/.zshrc
+   12  source ~/.zshrc
+   13  echo "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" >> git.token
+   14  cat git.token
+   15  pwd
+   16  mkdir git
+   17  cd git
+   18  git config --global credential.helper cache
+   19  lab-configure
+   20  ^[[200~git clone https://github.com/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/ICR-Education/DO180-apps.git
+   21  git clone https://github.com/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/ICR-Education/DO180-apps.git
+   22  git clone https://github.com/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/ICR-Education/DO180-apps.git
+   23  git clone https://github.com/ICR-Education/DO180-apps.git
+   24  cd DO180-apps
+   25  git checkout -b testbranch
+   26  echo "DO180" > TEST
+   27  git add .
+   28  git commit -m "DO180"
+   29  git push --set-upstream origin testbranch
+   30  git checkout -b testbranch2
+   31  git push --set-upstream origin testbranch2
+   32  echo "OCP4" >TEST
+   33  git add .
+   34  git commit -m "OCP4"
+   35  git push
+   36  git status
+   37  git branch -a
+   38  bash
+   39  podman --help`
+   40  podman --help
+   41  podman search rhel
+   42  podman run ubi8/ubi:8.3 echo 'Hello Israel, welcome to the world"
+   43  podman run ubi8/ubi:8.3 echo 'Hello Israel, welcome to the world'
+   44  podman images
+   45  podman ps
+   46  podman ps -a
+   47  podman -d -p 8080 registry.redhat.io/rhel8/httpd-24
+   48  podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24
+   49  podman login registry.redhat.io
+   50  podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24
+   51  podman port -l
+   52  curl http://0.0.0.0:33863
+   53  podman port -l
+   54  podman -help
+   55  podman --help
+   56  podman run --help
+   57  podman run -it ubi8/:8.3 /bin/bash
+   58  podman run -it ubi8/ubi:8.3 /bin/bash
+   59  podman ps -a
+   60  podman stop rene_liskov
+   61  podman ps -a
+   62  podman stop serene_liskov
+   63  podman ps -a
+   64  echo "Guide Exercise: Creating a MySQL Database Instance, In this excercise, you will start a MySQL database inside a container and then create and populate a database"
+   65  lab container-create start
+   66  podman run --name mysql-basic \\n> -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 \\n> -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 \\n> -d registry.redhat.io/rhel8/mysql-80:1
+   67  podman run --name mysql-basic \\n-e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 \\n-e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 \\n-d registry.redhat.io/rhel8/mysql-80:1
+   68  podman ps --format "{{.ID}} {{.Image}} {{.Names}}"
+   69  podman ps
+   70  podman exec -it mysql-basic /bin/bash
+   71  lab container-create finish
+   72  echo "FINISHING! Guide Exercise: Creating a MySQL Database Instance, In this excercise, you will start a MySQL database inside a container and then create and populate a database"
+   73  echo "Guided Exercise: Exploring Root and Rootless Containers, start"\n
+   74  lab container-rootless start
+   75  sudo podman run --rm --name asroot -it \\nregistry.access.redhat.com/ubi8:latest /bin/bash
+   76  sudo ps -ef | grep "sleep 1000"
+   77  podman run --rm --name asuser -it \\nregistry.access.redhat.com/ubi8:latest /bin/bash
+   78  sudo ps -ef | grep "sleep 2000" | grep -v grep
+   79  echo "Lab: Creating Containerized Services. Outcomes. You should be able to start and customize a container using a container image."
+   80  lab container-review start
+   81  podman login quay.io
+   82  podman run -d -p 8080:80 -name httpd-basic quay.io/redhattraining/httpd-parent
+   83  podman run -d -p 8080:80 --name httpd-basic quay.io/redhattraining/httpd-parent
+   84  podman stop httpd-basic
+   85  podman rm httpd-basic
+   86  podman run -d -p 8080:80 --name httpd-basic quay.io/redhattraining/httpd-parent:2.4
+   87  curl localhost:8080 
+   88  hisotry | grep bash
+   89  history | grep bash
+   90  podman exec -it httpd-basic /bin/bash
+   91  lab container-review grade
+   92  echo "Lab: Creating Containerized Services. Outcomes. You should be able to start and customize a container using a container image. FINISH"
+   93  lab manage-lifecycle start
+   94  podman login registry.redhat.io
+   95  podman run --name mysql-db registry.redhat.io/rhel8/mysql-80:1
+   96  podman logs mysql-db
+   97  podman run --name mysql \\n-d -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 \\n-e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 \\nregistry.redhat.io/rhel8/mysql-80:1
+   98  podman ps
+   99  podman cp ~/DO180/labs/manage-lifecycle/db.sql mysql:/
+  100  podman exec mysql /bin/bash -c \\n'mysql -uuser1 -pmypa55 items < /db.sql'
+  101  podman run --name mysql-2 -it registry.redhat.io/rhel8/mysql-80:1 /bin/bash
+  102  podman ps -a
+  103  podman exec mysql /bin/bash -c 'mysql -uuser1 -pmypa55 -e "select * from items.Projects;"'
+  104  lab manage-lifecycle finish
+  105  history
+  106  echo "Storing"
+  107  mkdir /home/student/dbfiles
+  108  podman unshare chown -R 27:27 /home/student/dbfiles
+  109  sudo semanage fcontext -a -t container_file_t '/home/student/dbfiles(/.*)?'
+  110  sudo restorecon -Rv /home/student/dbfiles
+  111  podman run -v /home/student/dbfiles:/var/lib/mysql rhmap47/mysql
+  112  echo "Guided Exercise: Create MySQL Container with Persistent Database In this exercise, you will create a container that stores the MySQL database data into a host directory. Start"
+  113  lab manage-storage start
+  114  mkdir -p /home/student/local/mysql
+  115  ls /home/student/local/mysql
+  116  sudo semanage fcontext -a -t container_file_t '/home/student/local/mysql(/.*)?'
+  117  sudo restorecon -R /home/student/local/mysql
+  118  ls -ldZ /home/student/local/mysql
+  119  podman unshare chown 27:27 /home/student/local/mysql
+  120  podman pull registry.redhat.io/rhel8/mysql-80:1
+  121  podman login registry.redhat.io
+  122  podman pull registry.redhat.io/rhel8/mysql-80:1
+  123  podman run --name persist-db \\n-d -v /home/student/local/mysql:/var/lib/mysql/data \\n-e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 \\n-e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 \\nregistry.redhat.io/rhel8/mysql-80:1
+  124  podman ps
+  125  ls -ld /home/student/local/mysql/items
+  126  lab manage-storage finish
+  127  podman run -d --name apache1 -p 8080:8080 registry.redhat.io/rhel8/httpd-24
+  128  podman port -l
+  129  podman run -d --name apache2 \\n-p 127.0.0.1:8081:8080 registry.redhat.io/rhel8/httpd-24
+  130  podman run -d --name apache3 -p 127.0.0.1::8080 \\nregistry.redhat.io/rhel8/httpd-24
+  131  podman port -l
+  132  podman port apache3
+  133  podman port apache1
+  134  podman port apache2
+  135  podman port apache3
+  136  curl -s 127.0.0.1:35134 | egrep '</?title>'
+  137  curl -s 127.0.0.1:45701 | egrep '</?title>'
+  138  podman run -d --name apache4 \\n-p 8080 registry.redhat.io/rhel8/httpd-24
+  139  podman port apache4
+  140  podman port -l
+  141  podman ps
+  142  podman stop all
+  143  podman stop apache*
+  144  podman stop --all
+  145  podman ps -a
+  146  podman rm apache*
+  147  podman rm --all
+  148  podman ps -a
+  149  echo "Guided Exercise: Loading the Database\nIn this exercise, you will create a MySQL database container with port forwarding enabled. After populating a database with a SQL script, you verify the database content using three different methods. - START-"
+  150  lab manage-networking start
+  151  mkdir -vp /home/student/local/mysql
+  152  podman run --name mysqldb-port -d -v /home/student/local/mysql:/var/lib/mysql/data -p 13306:3306 -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 registry.redhat.io/rhel8/mysql-80:1
+  153  podman ps --format="{{.ID}} {{.Names}} {{.Ports}}"
+  154  ls .la
+  155  ls -la
+  156  pwd
+  157  ls -la DO180
+  158  ls -la DO180/labs
+  159  ls -la DO180/labs/manage-networking
+  160  mysql -help
+  161  mysql --help
+  162  mysql -uuser1 -h 127.0.0.1 -pmypa55 -P13306 items < /home/student/DO180/labs/manage-networking/db.sql
+  163  podman exec -it mysqldb-port mysql -uroot items -e "SELECT * FROM Item"
+  164  mysql -uuser1 -h 127.0.0.1 -pmypa55 -P13306 items -e "SELECT * FROM Item"
+  165  podman exec -it mysqldb-port /bin/bash
+  166  lab manage-networking finish
+  167  lab manage-review start
+  168  echo "Lab: Managing Containers\nOutcomes\n\nYou should be able to deploy and manage a persistent database using a shared volume. You should also be able to start a second database using the same shared volume and observe that the data is consistent between the two containers because they are using the same directory on the host to store the MySQL data. -START-"
+  169  mkdir -vp /home/student/local/mysql
+  170  sudo semanage fcontext -a -t container_file_t '/home/student/local/mysql(/.*)?'
+  171  podman unshare chown -Rv 27:27 /home/student/local/mysql
+  172  podman ps -a
+  173  podman run --name mysql-1 -d -v /home/student/local/mysql:/var/lib/mysql/data -p 13306:3306 -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 registry.redhat.io/rhel8/mysql-80:1
+  174  mysql -uuser1 -h 127.0.0.1 -pmypa55 -P13306 items < /home/student/DO180/labs/manage-review/db.sql
+  175  podman ps 
+  176  podman stop mysql-1
+  177  podman run --name mysql-2 -d -v /home/student/local/mysql:/var/lib/mysql/data -p 13306:3306 -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 registry.redhat.io/rhel8/mysql-80:1
+  178  podman ps -a >/tmp/my-containers file
+  179  podman ps -a > /tmp/my-containers file
+  180  podman ps -a
+  181  podman ps -a > tmp/my-containers file
+  182  podman ps -a > /tmp/my-containers
+  183  podman exec -it mysql-2 /bin/bash
+  184  mysql -uuser1 -h 127.0.0.1 -pmypa55 -P13306 items -e "INSERT INTO Item (description,done) VALUES 'Finished lab',1"
+  185  mysql -uuser1 -h 127.0.0.1 -pmypa55 -P13306 items -e "INSERT INTO Item (description,done) VALUES 'Finished lab','1'"
+  186  podman exec -it mysql-2 /bin/bash
+  187  podman ps -a
+  188  mysql -uuser1 -h 127.0.0.1 -pmypa55 -P13306 items -e "SELECT * FROM Item"
+  189  mysql -uuser1 -h 127.0.0.1 -pmypa55 -P13306 items -e "INSERT INTO Item (description,done) VALUES ('Finished lab',1)"
+  190  mysql -uuser1 -h 127.0.0.1 -pmypa55 -P13306 items -e "SELECT * FROM Item"
+  191  podman rm mysql-1
+  192  lab manage-review grade
+  193  cat /etc/containers/registries.conf
+  194  podman save -o mysql.tar registry.redhat.io/rhel8/mysql-80
+  195  podman images
+  196  podman login registry.redhat.io
+  197  podman save -o mysql.tar registry.redhat.io/rhel8/mysql-80
+  198  echo "Guided Exercise: Creating a Custom Apache Container Image\nIn this guided exercise, you will create a custom Apache container image using the podman commit command- -START-"
+  199  lab image-operations start
+  200  podman login -u="israel-camacho" -p="aOOAuvrCQBYn8f9KrQm5xFlPcql8t0t75+YiHQP8zuuvNEsV/SjwVOO8NeeKEl4D" quay.io
+  201  podman login quay-io
+  202  podman login -u="israel-camacho" -p="aOOAuvrCQBYn8f9KrQm5xFlPcql8t0t75+YiHQP8zuuvNEsV/SjwVOO8NeeKEl4D" quay.io
+  203  podman login quay-io
+  204  podman login quay.io
+  205  podman logout quay.io
+  206  podman login quay.io
+  207  podman run -d --name official-httpd -p 8180:80 quay.io/redhattraining/httpd-parent
+  208  podman exec -it official-httpd /bin/bash
+  209  curl 127.0.0.1:8180/do180.html
+  210  podman diff official-httpd
+  211  podman stop official-httpd
+  212  podman commit -a 'Israel Camacho' \\n official-httpd do180-custom-httpd
+  213  podman images
+  214  source /usr/local/etc/ocp4.config
+  215  . /usr/local/etc/ocp4.config
+  216  podman tag do180-custom-httpd quay.io/${RHT_OCP4_QUAY_USER}/do180-custom-httpd:v1.0
+  217  podman images
+  218  podman push quay.io/${RHT_OCP4_QUAY_USER}/do180-custom-httpd:v1.0
+  219  podman pull -q quay.io/${RHT_OCP4_QUAY_USER}/do180-custom-httpd:v1.0
+  220  podman run -d --name test-httpd -p 8280:80 \\n${RHT_OCP4_QUAY_USER}/do180-custom-httpd:v1.0
+  221  curl http://localhost:8280/do180.html
+  222  lab image-operations finish
+  223  echo "Lab: Managing Images\nOutcomes\n\nYou should be able to create a custom container image and manage container images. -START-"
+  224  lab image-review start
+  225  podman pull --help
+  226  podman pull quay.io/redhattraining/nginx:1.17 
+  227  podman images
+  228  df -h
+  229  podman run -d --name official-nginx -p 8080:80 quay.io/redhattraining/nginx:1.17 
+  230  podman exec -it /bin/bash
+  231  podman exec -it official-nginx /bin/bash
+  232  curl 127.0.0.1:8080
+  233  podman stop official-nginx
+  234  podman ps
+  235  podman commit -a 'Israel Camacho' \\n official-nginx do180/mynginx
+  236  podman ps
+  237  podman ps -a
+  238  podman commit -a 'Israel Camacho' \\n official-nginx do180/mynginx:v1.0-SNAPSHOT
+  239  podman run -d --name official-nginx-dev -p 8080:80 do180/mynginx:v1.0-SNAPSHOT
+  240  curl 127.0.0.1:8080
+  241  podman exec -it official-nginx-dev /bin/bash
+  242  curl 127.0.0.1:8080
+  243  podman stop official-nginx-dev
+  244  podman commit -a 'Israel Camacho' \\n official-nginx-dev do180/mynginx:v1.0
+  245  podman images
+  246  podman rmi b6a51f39a4d0
+  247  podman ps 
+  248  podman ps -a
+  249  podman run -d --name my-nginx -p 8082:80 do180/mynginx:v1.0
+  250  podman rm official-nginx-dev
+  251  podman rmi mynginx:v1.0-SNAPSHOT
+  252  podman images
+  253  podman images rm -a
+  254  podman images
+  255  lab image-review grade
+  256  podman ps 
+  257  lab image-review finish
+  258  echo "Guided Exercise: Creating a Basic Apache Container Image\nIn this exercise, you will create a basic Apache container image. -START-"
+  259  lab dockerfile-create start
+  260  vim ~/DO180/labs/dockerfile-create/Containerfile
+  261  ls -lah ~/DO180/labs/dockerfile-create/
+  262  nano ~/DO180/labs/dockerfile-create/Containerfile
+  263  cat ~/DO180/labs/dockerfile-create/Containerfile
+  264  cd ~/DO180/labs/dockerfile-create/
+  265  odman build --layers=false -t do180/apache .
+  266  podman build --layers=false -t do180/apache .
+  267  podman login registry.redhat.io
+  268  podman build --layers=false -t do180/apache .
+  269  cat ~/DO180/labs/dockerfile-create/Containerfile
+  270  nano ~/DO180/labs/dockerfile-create/Containerfile
+  271  podman build --layers=false -t do180/apache .
+  272  nano ~/DO180/labs/dockerfile-create/Containerfile
+  273  podman build --layers=false -t do180/apache .
+  274  nano ~/DO180/labs/dockerfile-create/Containerfile
+  275  podman build --layers=false -t do180/apache .
+  276  nano ~/DO180/labs/dockerfile-create/Containerfile
+  277  cat ~/DO180/labs/dockerfile-create/Containerfile
+  278  nano ~/DO180/labs/dockerfile-create/Containerfile
+  279  cat ~/DO180/labs/dockerfile-create/Containerfile
+  280  podman build --layers=false -t do180/apache .
+  281  podman images
+  282  podman run --name lab-apache -d -p 10080:80 do180/apache
+  283  podman ps
+  284  curl -s 127.0.0.1:10080
+  285  curl -help
+  286  lab dockerfile-create finish
+  287  echo "Lab: Creating Custom Container Images\nIn this lab, you will create a Containerfile to build a custom Apache Web Server container image. The custom image will be based on a RHEL 8.5 UBI image and serve a custom index.html page. -START-"
+  288  lab dockerfile-review start
+  289  ls ~/DO180/labs/dockerfile-review
+  290  cat ~/DO180/labs/dockerfile-review/Containerfile
+  291  nano ~/DO180/labs/dockerfile-review/Containerfile
+  292  cat Containerfile
+  293  podman ps 
+  294  podman run --name lab-apache -d -p 10080:80 do180/apache
+  295  sudo df -h
+  296  podman build --layers=false -t do180/custom-apache .
+  297  podman run --name containerfile -d -p 20080:80 do180/custom-apache
+  298  podman ps 
+  299  curl -s 127.0.0.1:20080
+  300  lab dockerfile-review grade
+  301  podman exec -it /bin/bash
+  302  podman exec -it containerfile /bin/bash
+  303  curl -s 127.0.0.1:20080
+  304  lab dockerfile-review grade
+  305  history
+  306  podman stop .a
+  307  podman stop -a
+  308  podman rmi -a
+  309  podman rm -a
+  310  podman ps -a
+  311  podman images
+  312  podman rmi -a
+  313  podman images
+  314  podman build --layers=false -t do180/custom-apache .
+  315  podman rmi -a
+  316  nano ~/DO180/labs/dockerfile-review/Containerfile
+  317  podman build --layers=false -t do180/custom-apache .
+  318  podman run --name containerfile -d -p 20080:80 do180/custom-apache
+  319  curl -s 127.0.0.1:20080
+  320  lab dockerfile-review grade
+  321  cat Containerfile
+  322  cd ..
+  323  cd container-review
+  324  ls
+  325  cat httpd-container-image.pdf
+  326  cd ..
+  327  cd dockerfile-review
+  328  cat Containerfile
+  329  ls -la
+  330  cd src
+  331  ls
+  332  cat index.html
+  333  podman exec -it containerfile /bin/bash
+  334  cat index.html
+  335  cd ..
+  336  cat Containerfile
+  337  nano ~/DO180/labs/dockerfile-review/Containerfile
+  338  podman stop containerfile 
+  339  podman rm containerfile
+  340  podman rmi -a
+  341  podman build --layers=false -t do180/custom-apache .
+  342  podman run --name containerfile -d -p 20080:80 do180/custom-apache:latest
+  343  podman images
+  344  podman ps
+  345  podman run --name containerfile -d -p 20080:80 do180/custom-apache:latest
+  346  podman ps -a
+  347  podman rm -a
+  348  podman ps -a
+  349  podman run --name containerfile -d -p 20080:8080 do180/custom-apache:latest
+  350  podman ps
+  351  podman ps -a
+  352  nano ~/DO180/labs/dockerfile-review/Containerfile
+  353  podman rm -a
+  354  podman rmi -a
+  355  podman build --layers=false -t do180/custom-apache .
+  356  podman run --name containerfile -d -p 20080:8080 do180/custom-apache:latest
+  357  podman ps
+  358  curl localhost:20080
+  359  lab dockerfile-review grade
+  360  echo "Lab: Creating Custom Container Images\nIn this lab, you will create a Containerfile to build a custom Apache Web Server container image. The custom image will be based on a RHEL 8.5 UBI image and serve a custom index.html page. -FINISH-"
+  361  lab dockerfile-review finish
+  362  source /usr/local/etc/ocp4.config
+  363  cat /usr/local/etc/ocp4.config
+  364  oc login https://api.na410.prod.nextcle.com:6443\n
+  365  oc login
+  366  oc --help
+  367  oc get --help
+  368  echo "Guided Exercise: Deploying a Database Server on OpenShift\nIn this exercise, you will create and deploy a MySQL database pod on OpenShift using the oc new-app command.\n\nOutcomes\n\nYou should be able to create and deploy a MySQL database pod on OpenShift. -START-"
+  369  lab openshift-resources start
+  370  source /usr/local/etc/ocp4.config
+  371  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  372  oc new-project ${RHT_OCP4_DEV_USER}-mysql-openshift
+  373  c new-app \\n--template=mysql-persistent \\n-p MYSQL_USER=user1 -p MYSQL_PASSWORD=mypa55 -p MYSQL_DATABASE=testdb \\n-p MYSQL_ROOT_PASSWORD=r00tpa55 -p VOLUME_CAPACITY=10Gi
+  374  oc new-app \\n--template=mysql-persistent \\n-p MYSQL_USER=user1 -p MYSQL_PASSWORD=mypa55 -p MYSQL_DATABASE=testdb \\n-p MYSQL_ROOT_PASSWORD=r00tpa55 -p VOLUME_CAPACITY=10Gi
+  375  oc status
+  376  oc get pods
+  377  oc describe mysql-1-j4twp
+  378  oc describe pod mysql-1-j4twp
+  379  oc get svc
+  380  oc describe service mysql
+  381  oc get pvc
+  382  oc describe pvc mysql
+  383  oc describe pvc/mysql
+  384  oc port-forward mysql-1-j4twp 3306:3306
+  385  mysql -uuser1 -pmypa55 --protocol tcp -h localhost
+  386  oc delete project ${RHT_OCP4_DEV_USER}-mysql-openshift
+  387  lab openshift-resources finish
+  388  echo "Guided Exercise: Deploying a Database Server on OpenShift\nIn this exercise, you will create and deploy a MySQL database pod on OpenShift using the oc new-app command.\n\nOutcomes\n\nYou should be able to create and deploy a MySQL database pod on OpenShift. -FINISH-"
+  389  history
+  390  echo "Guided Exercise: Exposing a Service as a Route\nIn this exercise, you will create, build, and deploy an application on an OpenShift cluster and expose its service as a route.\n\nOutcomes\n\nYou should be able to expose a service as a route for a deployed OpenShift application. -START-"
+  391  podman login registry.redhat.io
+  392  podman login quay.io
+  393  lab openshift-routes start
+  394  source /usr/local/etc/ocp4.config
+  395  echo "login openshift"
+  396  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}\n
+  397  echo "Create a new project that contains your RHOCP developer username for the resources you create during this exercise."
+  398  oc new-project ${RHT_OCP4_DEV_USER}-route
+  399  echo "Create a new PHP application using the quay.io/redhattraining/php-hello-dockerfile image."
+  400  oc new-app \\n--image=quay.io/redhattraining/php-hello-dockerfile \\n--name php-helloworld
+  401  echo "Wait until the application finishes deploying by monitoring the progress with the oc get pods -w command:"
+  402  oc get pods -w
+  403  echo "^[[200~Alternatively, monitor the deployment logs with the oc logs -f php-helloworld-74bb86f6cb-zt6wl command. Press Ctrl + C to exit the command if necessary."
+  404  oc logs -f php-helloworld-85484585d6-gz758
+  405  echo "Review the service for this application using the oc describe command:"
+  406  oc describe svc/php-helloworld
+  407  echo "Expose the service, which creates a route. Use the default name and fully qualified domain name (FQDN) for the route:"
+  408  oc expose svc/php-helloworld
+  409  oc describe route
+  410  echo "Access the service from a host external to the cluster to verify that the service and route are working."
+  411  curl php-helloworld-${RHT_OCP4_DEV_USER}-route.${RHT_OCP4_WILDCARD_DOMAIN}
+  412  excho "Notice the FQDN is comprised of the application name and project name by default. The remainder of the FQDN, the subdomain, is defined when OpenShift is installed."
+  413  echo "Replace this route with a route named xyz."
+  414  oc delete route/php-helloworld
+  415  echo "Create a route for the service with a name of ${RHT_OCP4_DEV_USER}-xyz."
+  416  oc expose svc/php-helloworld --name=${RHT_OCP4_DEV_USER}-xyz
+  417  oc describe route
+  418  echo "Make an HTTP request using the FQDN on port 80:"
+  419  curl ${RHT_OCP4_DEV_USER}-xyz-${RHT_OCP4_DEV_USER}-route.${RHT_OCP4_WILDCARD_DOMAIN}
+  420  echo "Finish"
+  421  lab openshift-routes finish
+  422  echo "Guided Exercise: Creating a Containerized Application with Source-to-Image\nIn this exercise, you will build an application from source code and deploy the application to an OpenShift cluster.\n\nOutcomes\n\nYou should be able to:\n\nBuild an application from source code using the OpenShift command-line interface.\n\nVerify the successful deployment of the application using the OpenShift command-line interface. -START-"
+  423  lab openshift-s2i start
+  424  source /usr/local/etc/ocp4.config
+  425  podman login registry.redhat.io
+  426  podman login quay.io
+  427  lab openshift-s2i start
+  428  pwd
+  429  ls
+  430  cd git
+  431  ls
+  432  lab openshift-s2i start
+  433  ls -lah /home/student
+  434  cd ..
+  435  git clone https://github.com/ICR-Education/DO180-apps.git
+  436  lab openshift-s2i start
+  437  echo "1. Inspect the PHP source code for the sample application and create and push a new branch named s2i to use during this exercise."
+  438  echo "1.1 Enter your local clone of the DO180-apps Git repository and checkout the master branch of the course's repository to ensure you start this exercise from a known good state:"
+  439  cd ~/DO180-apps\n
+  440  echo "1.2 Create a new branch to save any changes you make during this exercise:"
+  441  git checkout -b s2i
+  442  git push -u origin s2i
+  443  git pull
+  444  git branch --set-upstream-to=origin/s2i
+  445  git status
+  446  git pull
+  447  echo "1.3 Review the PHP source code of the application, inside the the php-helloworld folder.\n\nOpen the index.php file in the ~/DO180-apps/php-helloworld folder:"
+  448  nano ~/DO180-apps/php-helloworld 
+  449  nano ~/DO180-apps/php-helloworld/index.php
+  450  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  451  echo Create a new project that contains your RHOCP developer username for the resources you create during this exercise:"\n"
+  452  oc new-project ${RHT_OCP4_DEV_USER}-s2i
+  453  echo "Create a new PHP application using Source-to-Image from the php-helloworld directory using the s2i branch you created in the previous step in your fork of the DO180-apps Git repository.\n\nUse the oc new-app command to create the PHP application."
+  454  oc new-app php:7.3 --name=php-helloworld https://github.com/$\{RHT_OCP4_GITHUB_USER\}/DO180-apps\#s2i --context-dir php-helloworld
+  455  oc status
+  456  oc new-app php:7.3 --name=php-helloworld \\nhttps://github.com/$\{RHT_OCP4_GITHUB_USER\}/DO180-apps\#s2i \\n--context-dir php-helloworld
+  457  cat /usr/local/etc/ocp4.config
+  458  . /usr/local/etc/ocp4.config
+  459  oc new-app php:7.3 --name=php-helloworld \\nhttps://github.com/ICR-Education/DO180-apps\#s2i \\n--context-dir php-helloworld
+  460  oc stauts
+  461  oc status
+  462  oc get pods
+  463  echo "Examine the logs for this build. Use the build pod name for this build, php-helloworld-1-build."
+  464  oc logs --all-containers \\n> -f php-helloworld-1-build
+  465  oc logs --all-containers \\n-f php-helloworld-1-build
+  466  echo "Review the Deployment for this application:"
+  467  oc describe deployment/php-helloworld
+  468  echo "Add a route to test the application:"
+  469  c expose service php-helloworld --name ${RHT_OCP4_DEV_USER}-helloworld
+  470  oc expose service php-helloworld --name ${RHT_OCP4_DEV_USER}-helloworld
+  471  echo "Find the URL associated with the new route:"
+  472  echo "Test the application by sending an HTTP GET request to the URL you obtained in the previous step. Type the URL in a single line."
+  473  curl -s  ${RHT_OCP4_DEV_USER}-helloworld-${RHT_OCP4_DEV_USER}-s2i. ${RHT_OCP4_WILDCARD_DOMAIN}
+  474  curl-s ${RHT_OCP4_DEV_USER}-helloworld-${RHT_OCP4_DEV_USER}-s2i. ${RHT_OCP4_WILDCARD_DOMAIN}
+  475  curl -s ${RHT_OCP4_DEV_USER}-helloworld-${RHT_OCP4_DEV_USER}-s2i. ${RHT_OCP4_WILDCARD_DOMAIN}
+  476  curl -s \\n${RHT_OCP4_DEV_USER}-helloworld-${RHT_OCP4_DEV_USER}-s2i.\\n${RHT_OCP4_WILDCARD_DOMAIN}
+  477  curl -s ${RHT_OCP4_DEV_USER}-helloworld-${RHT_OCP4_DEV_USER}-s2i.${RHT_OCP4_WILDCARD_DOMAIN}
+  478  'echo " Edit the index.php file as shown below:'
+  479  ls -la
+  480  cd php-helloworld
+  481  ls
+  482  cat index.php
+  483  nano index.php
+  484  git status
+  485  rm -f
+  486  ls
+  487  cd ..
+  488  ls
+  489  rm -f
+  490  ls -la
+  491  rm "-f"
+  492  ls
+  493  git add .
+  494  git commit -m "Changed index page contents."
+  495  git push origin s21
+  496  git push
+  497  git config --global credential.helper cache
+  498  git push
+  499  echo "Start a new Source-to-Image build process and wait for it to build and deploy:"\n\n
+  500  oc start-build php-helloworld
+  501  oc get pods
+  502  oc logs php-helloworld-2-build -f
+  503  echo "After the second build has completed use the oc get pods command to verify that the new version of the application is running."
+  504  oc get pods
+  505  curl -s ${RHT_OCP4_DEV_USER}-helloworld-${RHT_OCP4_DEV_USER}-s2i.${RHT_OCP4_WILDCARD_DOMAIN}
+  506  echo "Finish\n\nOn workstation, run the lab openshift-s2i finish script to complete this lab."
+  507  lab-openshift-s21 finish
+  508  lab openshift-s21 finish
+  509  cd ..
+  510  lab openshift-s2i finish
+  511  echo "Lab: Deploying Containerized Applications on OpenShift\nOutcomes\n\nYou should be able to create an OpenShift application and access it through a web browser. -START-"
+  512  lab openshift-review start
+  513  echo "Load the configuration of your classroom environment. Log in to OpenShift cluster and create a new project for this exercise. Name the project as ${RHT_OCP4_DEV_USER}-ocp."
+  514  . /usr/local/etc/ocp4.config
+  515  echo ${RHT_OCP4_DEV_USER}
+  516  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  517  oc new-project ${RHT_OCP4_DEV_USER}-ocp
+  518  echo "Create a temperature converter application named temps written in PHP using the php:7.3 image stream tag.\n\nThe source code is in the Git repository at https://github.com/RedHatTraining/DO180-apps/ in the temps directory. You may use the OpenShift command-line interface or the web console to create the application."
+  519  oc new-app php:7.3 --name=php-helloworld \\nhttps://github.com/ICR-Education/DO180-apps\#temps \\n--context-dir php-helloworld
+  520  oc new-app php:7.3 --name=php-helloworld \\nhttps://github.com/ICR-Education/DO180-apps\#temps \\n--context-dir php-temps
+  521  cd DO180-apps
+  522  git branch -a
+  523  git checkout temps
+  524  git branch -a
+  525  git status
+  526  git checkout master
+  527  git checkout temps
+  528  git checkout /temps
+  529  pwd
+  530  ls
+  531  cd temps
+  532  ls
+  533  cat index.php
+  534  cd ..
+  535  ls
+  536  git checkout -b temps
+  537  oc new-app php:7.3 --name=php-helloworld \\nhttps://github.com/ICR-Education/DO180-apps\#temps \\n--context-dir php-temps
+  538  oc new-app -t php:7.3 --name=temps \\nhttps://github.com/ICR-Education/DO180-apps \\n--context-dir temps
+  539  oc new-app php:7.3 --name=temps \\nhttps://github.com/ICR-Education/DO180-apps \\n--context-dir temps
+  540  oc status
+  541  oc logs -f bc/logs
+  542  oc logs -f bc/temps
+  543  oc get pods
+  544  oc expose svc/temps
+  545  echo http://temps-$\{RHT_OCP4_DEV_USER\}-ocp.$\{RHT_OCP4_WILDCARD_DOMAIN\}
+  546  echo "http://temps-$\{RHT_OCP4_DEV_USER\}-ocp.$\{RHT_OCP4_WILDCARD_DOMAIN\}"
+  547  curl -s http://temps-$\{RHT_OCP4_DEV_USER\}-ocp.$\{RHT_OCP4_WILDCARD_DOMAIN\}
+  548  oc get route/temps
+  549  curl -s temps-lomrjm-ocp.apps.na410.prod.nextcle.com
+  550  lab openshift-review grade
+  551  echo "^[[200~Guided Exercise: Deploying the Web Application and MySQL on Linux Containers\nIn this lab, you will create a script that runs and networks a Node.js application container and the MySQL container.\n\nOutcomes\n\nYou should be able to network containers to create a multi-tiered application. -START-"
+  552  lab multicontainer-design start
+  553  echo "Procedure 7.1. Instructions\n\nLog in to the Red Hat Container Catalog with your Red Hat account. If you need to register to Red Hat, see the instructions in Appendix D, Creating a Red Hat Account."
+  554  nano ~/DO180/labs/multicontainer-design/deploy/nodejs/Containerfile.
+  555  nano ~/DO180/labs/multicontainer-design/deploy/nodejs/Containerfile
+  556  echo "Review the Containerfile.\n\nUsing your preferred editor, open and examine the completed Containerfile located at ~/DO180/labs/multicontainer-design/deploy/nodejs/Containerfile.\n\nRun ip addr command to grep host IP address."
+  557  ip .br addr list eth0
+  558  ip-br addr list eth0
+  559  ip -br addr list eth0
+  560  echo "Explore the Environment Variables.\n\nInspect the environment variables that allow the Node.js REST API container to communicate with the MySQL container.\n\nView the file ~/DO180/labs/multicontainer-design/deploy/nodejs/nodejs-source/models/db.js, containing the database configuration provided below:"
+  561  nano ~/DO180/labs/multicontainer-design/deploy/nodejs/nodejs-source/models/db.js
+  562  echo "Notice the environment variables used by the REST API. These variables are exposed to the container using -e options with the podman run command in this guided exercise. Those environment variables are described below.\n\nMYSQL_DATABASE\nThe name of the MySQL database in the mysql container.\n\nMYSQL_USER\nThe name of the database user used by the todoapi container to run MySQL commands.\n\nMYSQL_PASSWORD\nThe password of the database user that the todoapi container uses to authenticate to the mysql container."
+  563  echo "Build the To Do List application child image using the provided Containerfile.\n\nBuild the child image.\n\nExamine the ~/DO180/labs/multicontainer-design/deploy/nodejs/build.sh script to see how the image is built. Run the following commands to build the child image."
+  564  cd ~/DO180/labs/multicontainer-design/deploy/nodejs
+  565  ./build.sh
+  566  echo "Wait for the build to complete and then run the following command to verify that the image has been built successfully:"
+  567  echo "Modify the existing script to create containers with the appropriate ports, as defined in the previous step. In this script, the order of commands is given such that it starts the mysql container and then starts the todoapi container before connecting it to the mysql container. After invoking every container, there is a wait time of 9 seconds, so each container has time to start.\n\nEdit the run.sh file located at ~/DO180/labs/multicontainer-design/deploy/nodejs/networked to insert the podman run command at the appropriate line for invoking mysql container. The following screen shows the exact podman command to insert into the file."
+  568  cd networked
+  569  ls
+  570  nano run.sh
+  571  ./run.sh
+  572  podman ps--format="table {{.ID}} {{.Names}} {{.Image}} {{.Status}}"
+  573  podman ps --format="table {{.ID}} {{.Names}} {{.Image}} {{.Status}}"
+  574  clear
+  575  mysql -uuser1 -h 172.25.250.9 -pmypa55 -P30306 items <  ~/DO180/labs/multicontainer-design/deploy/nodejs/networked/db.sql
+  576  echo "^[[200~Populate the items database with the Projects table.~"
+  577  echo "~Populate the items database with the Projects table."
+  578  echo "Examine the environment variables of the API container.\n\nRun the following command to explore the environment variables exposed in the API container."
+  579  dman exec -it todoapi env
+  580  podman exec -it todoapi env
+  581  url -w "\n"  http://127.0.0.1:30080/todo/api/items/1
+  582  echo "Test the application.\n\nRun a curl command to test the REST API for the To Do List application."
+  583  lab multicontainer-design finish
+  584  lab multicontainer-design start
+  585  cd ..
+  586  ls
+  587  cat Containerfile
+  588  cat /usr/local/etc/ocp4.config
+  589  echo "Guided Exercise: Creating an Application on OpenShift\nIn this exercise, you will deploy the To Do List application in OpenShift Container Platform.\n\nOutcomes\n\nYou should be able to build and deploy an application in OpenShift Container Platform."
+  590  lab multicontainer-application start
+  591  echo "rocedure 7.2. Instructions\n\nCreate the To Do List application from the provided YAML file.\n\nLog in to OpenShift Container Platform."
+  592  source /usr/local/etc/ocp4.config\n
+  593  oc login -u ${RHT_OCP4_DEV_USER}  -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  594  echo "Create a new project application in OpenShift to use for this exercise. Run the following command to create the"
+  595  oc new-project ${RHT_OCP4_DEV_USER}-application
+  596  echo "Review the YAML file.\n\nUsing your preferred editor, open and examine the app file located at ~/DO180/labs/multicontainer-application/todo-app.yml. Notice the following resources defined in the todo-app.yml and review their configurations.\n\nThe todoapi pod definition defines the Node.js application.\n\nThe mysql pod definition defines the MySQL database.\n\nThe todoapi service provides connectivity to the Node.js application pod.\n\nThe mysql service provides connectivity to the MySQL database pod.\n\nThe dbclaim persistent volume claim definition defines the MySQL /var/lib/mysql/data volume."
+  597  nano /DO180/labs/multicontainer-application/todo-app.yml
+  598  nano ~/DO180/labs/multicontainer-application/todo-app.yml
+  599  echo "Create application resources with given yaml file.\n\nUse the oc create command to create the application resources. Run the following command in the terminal window:"
+  600  cd ~/DO180/labs/multicontainer-application
+  601  oc create -f todo-app.yml
+  602  echo "Review the status of the deployment using the oc get pods command with the -w option to continue to monitor the pod status. Wait until both the containers are running. It may take some time for both pods to start."
+  603  oc get pods -w
+  604  oc port-forward mysql 3306:3306
+  605  echo "From the workstation machine, configure port forwarding between workstation and the database pod running on OpenShift using port 3306. The terminal will hang after executing the command.\n\n[student@workstation multicontainer-application]$ oc port-forward mysql 3306:3306"
+  606  echo "From the workstation machine open another terminal and populate the data to the MySQL server using the MySQL client."
+  607  cd ~/DO180/labs/multicontainer-application
+  608  [200~mysql -uuser1 \n: 1672804027:0;mysql -uuser1 > -h 127.0.0.1 -pmypa55 -P3306 items < db.sql
+  609  echo "Close the terminal and return to the previous one. Finish the port forwarding process by pressing Ctrl+C."
+  610  echo "Expose the Service.\n\nTo allow the To Do List application to be accessible through the OpenShift router and to be available as a public FQDN, use the oc expose command to expose the todoapi service.\n\nRun the following command in the terminal window."
+  611  oc expose service todoapi
+  612  echo "est the application.\n\nFind the FQDN of the application by running the oc status command and note the FQDN for the app.\n\nRun the following command in the terminal window."
+  613  oc status | grep -o "http:.*com"
+  614  echo "Use curl to test the REST API for the To Do List application."\n\n
+  615  curl -w "\n" \\n> $(oc status | grep -o "http:.*com")/todo/api/items/1
+  616  curl -w "\n"  $(oc status | grep -o "http:.*com")/todo/api/items/1
+  617  curl -s http://todoapi-lomrjm-application.apps.na410.prod.nextcle.com/todo/api/items/1
+  618  echo fixing
+  619  oc delete todo-app
+  620  oc get apps
+  621  oc get all
+  622  oc port-forward mysql 3306:3306
+  623  oc logs -f pod/todoapi
+  624  cd ~/DO180/labs/multicontainer-application
+  625  mysql -uuser1  -h 127.0.0.1 -pmypa55 -P3306 items < db.sql
+  626  mysql -uuser1  -h 127.0.0.1 -pmypa55 -P3306 
+  627  curl -s http://todoapi-lomrjm-application.apps.na410.prod.nextcle.com/todo/api/items/1
+  628  lab multicontainer-application finish
+  629  echo "Deploying a Multi-container Application on OpenShift Using a Template\nObjectives\nAfter completing this section, students should be able to deploy a multi-container application on OpenShift using a template."
+  630  oc get templates -n openshift
+  631  oc get template mysql-persistent -n openshift -o yaml
+  632  oc get template springboot -n openshift -o yaml
+  633  oc get templates -n springboot
+  634  echo "Guided Exercise: Creating an Application with a Template\nIn this exercise, you will deploy the To Do List application in OpenShift Container Platform using a template to define resources your application needs to run."\n\n
+  635  echo "Guided Exercise: Creating an Application with a Template\nIn this exercise, you will deploy the To Do List application in OpenShift Container Platform using a template to define resources your application needs to run. -START-"\n\n
+  636  lab multicontainer-openshift start
+  637  echo "Procedure 7.3. Instructions\n\nCreate the To Do List application from the provided JSON template.\n\nLoad your classroom environment configuration. Run the following command to load the environment variables created in the first guided exercise:"\n
+  638  source /usr/local/etc/ocp4.config\n
+  639  echo "Log in to OpenShift Container Platform. If the oc login command prompts about using insecure connections, answer y (yes)"
+  640  oc login -u ${RHT_OCP4_DEV_USER}  -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  641  echo "Create a new project template in OpenShift to use for this exercise. Run the following command to create the template project."
+  642  oc new-project ${RHT_OCP4_DEV_USER}-template
+  643  echo "Review the template.\n\nUsing your preferred editor, open and examine the template located at ~/DO180/labs/multicontainer-openshift/todo-template.json. Notice the following resources defined in the template and review their configurations.\n\nThe todoapi pod definition defines the Node.js application.\n\nThe mysql pod definition defines the MySQL database.\n\nThe todoapi service provides connectivity to the Node.js application pod.\n\nThe mysql service provides connectivity to the MySQL database pod.\n\nThe dbclaim persistent volume claim definition defines the MySQL /var/lib/mysql/data volume."
+  644  nano /DO180/labs/multicontainer-openshift/todo-template.json
+  645  nano ~/DO180/labs/multicontainer-openshift/todo-template.json
+  646  clear
+  647  echo "Process the template and create the application resources.\n\nUse the oc process command to process the template file. This template requires the Quay.io namespace to retrieve the container images. Use the pipe command to send the result to the oc create command.\n\nRun the following command in the terminal window:"
+  648  cd ~/DO180/labs/multicontainer-openshift
+  649  oc process -f todo-template.json | oc create -f -
+  650  oc get pods -w
+  651  echo "Connect to the MySQL database server and populate the data to the item database.\n\nFrom the workstation machine, configure port forwarding between workstation and the database pod running on OpenShift using port 3306. The terminal will hang after executing the command."\n
+  652* oc port-forward mysql 3306:3306
+  653  echo "From the workstation machine open another terminal and populate the data to the MySQL server using the MySQL client."
+  654  cd ~/DO180/labs/multicontainer-openshift
+  655  mysql -uuser1 -h 127.0.0.1 -pmypa55 -P3306 items < db.sql
+  656  mysql -uuser1 -h 127.0.0.1 -pmypa55 -P3306
+  657  echo "xpose the Service.\n\nTo allow the To Do List application to be accessible through the OpenShift router and to be available as a public FQDN, use the oc expose command to expose the todoapi service.\n\nRun the following command in the terminal window."
+  658  oc expose service todoapi
+  659  echo "est the application.\n\nFind the FQDN of the application by running the oc status command and note the FQDN for the app.\n\nRun the following command in the terminal window."
+  660  oc status | grep -o "http:.*com"
+  661  echo "Use curl to test the REST API for the To Do List application."
+  662  curl -w "\n" \\n> $(oc status | grep -o "http:.*com")/todo/api/items/1
+  663  curl -w "\n" $(oc status | grep -o "http:.*com")/todo/api/items/1
+  664  cd ~
+  665  lab multicontainer-openshift finish
+  666  echo "Lab: Deploying Multi-Container Applications\nOutcomes\n\nYou should be able to create an OpenShift application comprised of multiple containers and access it through a web browser.\n\nMake sure you have completed the section called “Guided Exercise: Configuring the Classroom Environment” from Chapter 1 before executing any command of this practice."\n\n
+  667  lab multicontainer-review start
+  668  source /usr/local/etc/ocp4.config\n
+  669  oc login -u ${RHT_OCP4_DEV_USER}  -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  670  echo "Build the Database container image located in the images/mysql directory, tag it with do180-mysql-80-rhel8 and publish it to your quay.io repository."
+  671  pwd
+  672  ls -lah
+  673  cd ~/DO180/labs
+  674  ls
+  675  cd multicontainer-review
+  676  ls
+  677  cd images
+  678  ls -la
+  679  cat mysql
+  680  ls mysql
+  681  cat Containerfile
+  682  ls -lah
+  683  cd mysql
+  684  ls
+  685  nano Containerfile
+  686  podman login quay.io
+  687  podman login registry.redhat.io
+  688  nano Containerfile
+  689  podman build --layers=false -t do180-mysql-80-rhel8 .
+  690  echo "Build the PHP container image located in the images/quote-php, tag it with do180-quote-php and publish it to your quay.io repository."
+  691  echo "To tag and push the image run the following commands in the terminal window."
+  692  podman tag do180-mysql-80-rhel8 quay.io/${RHT_OCP4_QUAY_USER}/do180-mysql-80-rhel8
+  693  podman images
+  694  podman push quay.io/${RHT_OCP4_QUAY_USER}/do180-mysql-80-rhel8
+  695  cd ~/DO180/labs/multicontainer-review
+  696  echo "Build the PHP container image located in the images/quote-php, tag it with do180-quote-php and publish it to your quay.io repository."
+  697  cd images/quote-php
+  698  cat Containerfile
+  699  podman build --layers=false -t do180-quote-php .
+  700  podman tag do180-quote-php quay.io/${RHT_OCP4_QUAY_USER}/do180-quote-php
+  701  podman images
+  702  podman push quay.io/${RHT_OCP4_QUAY_USER}/do180-quote-php
+  703  echo "Go to the ~/DO180/labs/multicontainer-review directory and review the provided template quote-php-template.json file"
+  704  cd ~/DO180/labs/multicontainer-review
+  705  nano quote-php-template.json
+  706  echo "Upload the PHP application template so that any developer with access to your project can use it."
+  707  oc create -f quote-php-template.json
+  708  oc login -u ${RHT_OCP4_DEV_USER}  -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  709  oc new-project ${RHT_OCP4_DEV_USER}-deploy
+  710  oc create -f quote-php-template.json
+  711  echo "Process the uploaded template, create the application resources and verify their status."
+  712  oc process -f quote-php-template.json | oc create -f -
+  713  oc process -f quote-php-persistent -p RHT_OCP4_QUAY_USER=${RHT_OCP4_QUAY_USER} | oc create -f -
+  714  ls -lah
+  715  oc process -f quote-php-persistent -p RHT_OCP4_QUAY_USER=${RHT_OCP4_QUAY_USER} | oc create -f -
+  716  oc create -f quote-php-template.json
+  717  oc get template --all
+  718  oc get template -a
+  719  oc get template
+  720  oc process quote-php-persistent -p RHT_OCP4_QUAY_USER=${RHT_OCP4_QUAY_USER} | oc create -f -
+  721  oc get pods -W
+  722  oc get pods -w
+  723  history
+  724  oc process -f quote-php-persistent -p RHT_OCP4_QUAY_USER=${RHT_OCP4_QUAY_USER} | oc create -f -
+  725  echo "Expose the service quote-php.\n\nAllow the PHP Quote application to be accessible through the OpenShift router and reachable from an external network"
+  726  oc get services
+  727  oc expose service quote-php
+  728  oc get routes
+  729  culr -s quote-php-lomrjm-deploy.apps.na410.prod.nextcle.com 
+  730  lab multicpmtaomer-review grade
+  731  lab multicontainer-review grade
+  732  curl http://quote-php-lomrjm-deploy.apps.na410.prod.nextcle.com/
+  733  history > DO180.history
+  734  cd ~
